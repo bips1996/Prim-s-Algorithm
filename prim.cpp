@@ -169,7 +169,7 @@ int maximum(int a , int b)
 	if(a>b)return a;
 	return b;
 }
-vector< pair<float, pair<int, int> > > arr1;
+
 void Print_An_Array(int array[],float weight[],int size,float sum)
 {
 	printf("%.2f\n",sum);
@@ -177,21 +177,9 @@ void Print_An_Array(int array[],float weight[],int size,float sum)
 	arr1.resize(size);
 	for (int l = 1; l < size; ++l)
 	{
-		// cout<<array[l]<<" "<<l<<" "<<weight[l]<<endl;
-		arr1[l].first=weight[l];
-		arr1[l].second.first=minimum(array[l],l);
-		arr1[l].second.second=maximum(array[l],l); 
+		 cout<<array[l]<<" "<<l<<" "<<weight[l]<<endl;
 	}
-	sort(arr1.begin(), arr1.end());
-	for (int i = 1; i < size; ++i)
-	{
-		if(arr1[i].first>-1000000 && arr1[i].first<1000000)
-		{
-			cout<<arr1[i].second.first<<" "<<arr1[i].second.second<<" ";
-			//cout<<arr1[i].first<<endl;
-			printf("%.2f\n",arr1[i].first);
-		}
-	}
+	
 }
 void Prim_Minimum_Spanning_Tree(struct Graph* graph)
 {
