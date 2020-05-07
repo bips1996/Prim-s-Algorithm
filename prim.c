@@ -1,17 +1,10 @@
-#include <iostream>
-#include <iomanip>
-#include <string>
+
 #include <stdio.h>
 #include <math.h>
-#include <stack>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <list>
-#include <vector>
-#include <algorithm>
 #include <limits.h>
-using namespace std;
+#include<stdbool.h>
 struct Adjacency_List_Node
 {
 	int destination;
